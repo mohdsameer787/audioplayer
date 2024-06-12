@@ -3,10 +3,6 @@
     padding: 0;
 
 }
-
-
-
-
 .border{
     border: solid black;
 }
@@ -145,25 +141,30 @@
     overflow-y:scroll;
 }
 .card{
-
     width: 175px;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
     cursor: pointer;
 }
 .cardcontainer {
    transition: all 1s;
 gap: 10px;
+
+
 }
 .cardcontainer :hover{
-    transition: all 1s;
+    transition: 1s;
     background-color: #353434;
     text-decoration: none;
     width: 185px;
     gap :5px;
 
 }
-
+.cardcontainer:hover .play{
+    opacity: 1;
+    top :170px;
+    transition: all 0.5s ease-out;
+}
 .card h2  {
  color: #ffffff;
 }
@@ -172,27 +173,25 @@ gap: 10px;
     color: #ffffff;
    }
 .card img {
-   width: 100%;
+    width: 100%;
     object-fit: contain;
     border-radius: 10px;
 }
 .play{
-    width: 28px;
+    width: 28px; 
     height: 28px;
     padding: 4px;
     align-items: center;
-    justify-content: center;
-    position: absolute;
-    top :400x;
-   right: 25px;
-   opacity: 0;
-
-}
-.play:hover {
-    opacity: 1;
-    top :245px;
-    transition: all 1s;
+ position: relative;
+    top : 200px;
+    opacity: 0;
+    left:5px;
 }
 
+.play:hover{
+   object-fit: contain;
+    width: 5px;
+    transition: none;
+}
 
 
