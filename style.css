@@ -31,7 +31,9 @@
     background-color: #171717;
     border-radius: 6px;
     padding: 5px;
-    height: 100vh;
+    height: 80vh;
+
+    
 }
 
 .rightcontener{
@@ -43,6 +45,7 @@
 }
 .margin{
     margin-left:3px ;
+
 }
 .invert{
     filter: invert(1);
@@ -192,6 +195,68 @@ gap: 10px;
    object-fit: contain;
     width: 5px;
     transition: none;
+    
 }
+.magin{
+    margin-left: 5px;
+    padding-top: 20px;
+      overflow-y: scroll;
+      max-height: 60vh;
+  
 
+}
+.magin ul li {
+    display: flex;
+    list-style-type: decimal ;
+    gap: 20px;
+    cursor: pointer;
+    padding: 13px 0px;
+    padding-left: 4px;
+    border: solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 12px 0px;
+    justify-content: space-between;
+
+    
+
+     
+}
+.playnow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 10px;
+    padding-right: 4px;
+}
+.playbar{
+   
+    height: 40px;
+    display: flex;
+    width: 71%;
+    align-items: center;
+    justify-content: center;
+    background-color: #353434;
+    border-radius: 25px;
+    padding-bottom: 15px;
+    position: fixed;
+}
+.seekbar{
+        bottom: 8px ;
+        width: 96%;
+        height: 2px;
+        border-radius: 8px;
+      background-color: #ffffff;
+        border: 1.5px solid white;
+        position: absolute;
+}
+.circle{
+    height: 15px;
+    width: 15px;
+    border-radius: 13px;
+    background-color: #ffffff;
+    position:relative;
+    bottom: 7.5px;
+    left: 0px;
+    transition: left 0.5s;
+}
 
