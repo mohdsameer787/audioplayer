@@ -22,7 +22,7 @@ async function getsong() {
     return songs
 }
 playmusic=(track)=>{
-    currentsong.src="/karanplaylist/"+track;
+    currentsong.src="http://127.0.0.1:5501/karanplaylist/"+track;
     currentsong.play();
 }
 
