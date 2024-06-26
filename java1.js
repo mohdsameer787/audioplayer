@@ -3,7 +3,7 @@ console.log("working");
 let currentsong=new Audio();
 async function getsong() {
 
-    let hrf = await fetch("/audioplayer/karanplaylist/");
+    let hrf = await fetch("http://127.0.0.1:5501/karanplaylist/");
     let response = await hrf.text();
 
     let div = document.createElement('div');
