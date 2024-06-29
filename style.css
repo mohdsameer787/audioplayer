@@ -151,6 +151,7 @@
 .playlist{
     padding-top: 1.6%;
     display: flex;
+    justify-content : center;
     flex-wrap: wrap;
     max-height: 78vh;
     overflow-y:scroll;
@@ -257,13 +258,15 @@ gap: 10px;
 display: flex;
 justify-content: center;
 position: relative;
+cursor: pointer;
 
 }
+
 .seekbar{
         bottom: 8px ;
         width: 97%;
         margin-left: 10px;
-        height: 2px;
+        height: 4px;
         border-radius: 20px;
       background-color: #ffffff;
         border: 1.5px solid white;
@@ -272,7 +275,7 @@ position: relative;
 }
 .circle{
     margin-top: 1.5px;
-    height: 13px;
+    height: 15px;
     width: 13px;
     
     border-radius: 13px;
@@ -303,6 +306,9 @@ position: relative;
     display: none;
     cursor : pointer;
 }
+.information{
+    font-size: 0.9rem;
+}
     
 
 @media (max-width:800px) {
@@ -312,7 +318,7 @@ position: relative;
        left:-100%;
        z-index: 1;
        transition: all 1s;
-       width: 250px;
+       width: 300px;
        background-color: #000;
      
 
@@ -327,14 +333,27 @@ position: relative;
         width: 100%;
     }
     .playbar{
-        width: 99%;
+
+        align-items: center;
+        margin-right: 5px;
+        width: 98%;
+        height: 10vh;
+        bottom: 5px;
+        border-radius: 4px;
+       
+        padding-top: 10px;
+    }
+    .seekbar{
+        width: 93%;
+        margin: 4px;
+        
     }
 .header2{
     width: 100%;
 }
 .playlist{
     width:100%
-    justifycontent
+   
 }
 .hamburger  {
     display: block;
@@ -351,6 +370,32 @@ position: relative;
 .crosse{
    display: block;
     cursor : pointer;
+}
+.information{
+    font-size: 0.6rem;
+}
+.uperbar{
+    align-items: center;
+}
+.duration{
+    font-size: 0.7rem;
+}
+.magin{
+    font-size: 0.8rem;
+}
+.cardcontainer{
+    width: 38vh;
+
+}
+.cardcontainer :hover {
+    transition: 1s;
+    background-color: #353434;
+    text-decoration: none;
+    width: 40vh;
+    gap: 5px;
+}
+.card{
+    width: 90%;
 }
     
 }

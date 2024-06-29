@@ -102,8 +102,6 @@ async function main() {
            
 
         })
-
-
        play1.addEventListener("click",()=>{
         if(currentsong.paused){
             currentsong.play();
@@ -115,7 +113,6 @@ async function main() {
             play1.src="playbutton.svg"
         }
        })   
-
        currentsong.addEventListener('timeupdate',()=>{
         document.querySelector(".duration").innerHTML= `${formatTime(currentsong.currentTime)}/${formatTime(currentsong.duration)}`
         document.querySelector(".circle").style.left=(currentsong.currentTime/currentsong.duration)*100 + "%";
