@@ -298,6 +298,12 @@ position: relative;
     margin-right: 10px ;
     width: 25%;
 }
+.crosse{
+    display: flex;
+    display: none;
+    cursor : pointer;
+}
+    
 
 @media (max-width:800px) {
 
@@ -342,8 +348,8 @@ position: relative;
     display: flex;
     justify-content: space-between;
 }
-.corsse{
-
+.crosse{
+   display: block;
     cursor : pointer;
 }
     
