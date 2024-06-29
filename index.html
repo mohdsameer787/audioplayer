@@ -14,38 +14,44 @@
     <div class="contener">
         <div class="topcon">
             <div class="home ">
-                <div class="logo"> <img class="invert" src="logo.svg" alt="logo"></div>
+                <div class="topconh"><div class="logo"><img class="invert" src="logo.svg" alt="logo"></div>
+                    <div class="crosse"><img src="crosse.svg" alt=""> </div></div>
+               
                 <div class="home1">
                     <ul class=" list invert">
-                        <li> <a href="https://www.w3schools.com/html/html_links.asp"><img class="homelogo"
-                                    src="home.svg" alt="Home"> Home</a></li>
-                        <li> <a href="https://www.w3schools.com/html/html_links.asp"><img class="searchlogo"
-                                    src="search.svg" alt="Search"> Search</a></li>
+                        <li> <a href="#"><img class="homelogo" src="home.svg" alt="Home"> Home</a></li>
+                        <li> <a href="#"><img class="searchlogo" src="search.svg" alt="Search"> Search</a></li>
 
                     </ul>
                 </div>
             </div>
-            <div class="leftcontener  ">
+            <div class=" leftcontener  ">
+
                 <div class="invert library">
                     <img src="playlist.svg" alt="logo">
                     <h5>your libreay</h5>
                 </div>
-                <div id="sonlist" class="magin invert">
+
+                <div id="sonlist" class="invert magin">
                     <ul>
-                       
+                        <!-- Songs will be listed here -->
                     </ul>
                 </div>
+
+
             </div>
         </div>
 
         <div class="rightcontener  margin" id="maincontainar">
             <div class="header2">
                 <div class="dirbutton">
+                    <div class="hamburger"><img  src="ham.svg" alt="hamburger"></div>
+                    <div class="arrowb"></div>
                     <img src="left.svg" alt="left" onclick="r">
                     <img src="right.svg" alt="right">
                 </div>
-                <div class="button"><button class="buttons">signin</button>
-                    <button class="buttonl">log in</button>
+                <div class="button"><button class="buttons" >signin</button>
+                    <button id="playsong" class="buttonl">log in</button>
                 </div>
             </div>
             <h2 class="invert">Popular playlist</h2>
@@ -53,7 +59,7 @@
 
                 <div class="cardcontainer">
 
-                    <div id="one" class="card" onclick=' main(); '>
+                    <div id="one" class="card" onclick=' main();  '>
 
                         <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
                                 height="24">
@@ -214,33 +220,24 @@
                         <p>popuplar karan aujla songs</p>
                     </div>
                 </div>
-                <div class="cardcontainer">
-                    <div class="card" onclick=''>
-                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
-                                height="24">
-                                <!-- Define the circular background with the new color -->
-                                <circle cx="12" cy="12" r="12" fill="#1fdf64" />
-                                <!-- Group the play button and transform it for centering, padding, and resizing -->
-                                <g transform="translate(3 3) scale(0.75)">
-                                    <path
-                                        d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
-                                        fill="black" stroke="none" />
-                                </g>
-                            </svg>
-                        </div>
-                        <img src="cover.jpg" alt="cover">
-                        <h2>karan aujla</h2>
-                        <p>popuplar karan aujla songs</p>
-                    </div>
-                </div>
+           
             </div>
             <div class="playbar">
-                <img src="previous.svg" alt="p">
-                <img src="playbutton.svg" alt="play">
-                <img src="next.svg" alt="next">
                 <div class="seekbar">
                     <div class="circle"></div>
                 </div>
+                <div class="uperbar">
+                    <div class="invert information">
+
+                    </div>
+
+                    <div class="icons">
+                        <img id="pre" src="previous.svg" alt="p">
+                        <img id="play1" src="playbutton.svg" alt="play">
+                        <img id="next" src="next.svg" alt="next">
+                    </div>
+                    <div class=" invert duration"></div>
+                </div>      
             </div>
         </div>
     </div>

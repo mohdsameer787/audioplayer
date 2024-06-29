@@ -129,7 +129,19 @@
     cursor: pointer;
 }
 .dirbutton{
-    margin: 3px;
+    display: flex;
+    align-items: center;
+  
+  
+   
+}
+.hamburger{
+    background-color: #353434;
+    margin-left: 5px;
+    margin-right: 20px;
+    height: 30px;
+      display: none;
+    
 }
 .dirbutton img{
     background-color: #171717;
@@ -229,29 +241,40 @@ gap: 10px;
     padding-right: 4px;
 }
 .playbar{
-   
+   bottom: 20px;
     height: 40px;
-    display: flex;
-    width: 71%;
-    align-items: center;
-    justify-content: center;
+    
+    width: 72%;
+   
     background-color: #353434;
     border-radius: 25px;
     padding-bottom: 15px;
     position: fixed;
 }
+.icons{
+    padding-top:5px ;
+    padding-bottom:5px ;
+display: flex;
+justify-content: center;
+position: relative;
+
+}
 .seekbar{
         bottom: 8px ;
-        width: 96%;
+        width: 97%;
+        margin-left: 10px;
         height: 2px;
-        border-radius: 8px;
+        border-radius: 20px;
       background-color: #ffffff;
         border: 1.5px solid white;
         position: absolute;
+        cursor: pointer;
 }
 .circle{
-    height: 15px;
-    width: 15px;
+    margin-top: 1.5px;
+    height: 13px;
+    width: 13px;
+    
     border-radius: 13px;
     background-color: #ffffff;
     position:relative;
@@ -259,4 +282,69 @@ gap: 10px;
     left: 0px;
     transition: left 0.5s;
 }
+.uperbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.information{
+    margin-left: 10px;
+    width: 25%;
+}
+.duration{
+    display: flex;
+    justify-content: right;
+    margin-right: 10px ;
+    width: 25%;
+}
 
+@media (max-width:800px) {
+
+.topcon{
+       position: absolute;
+       left:-100%;
+       z-index: 1;
+       transition: all 1s;
+       width: 250px;
+       background-color: #000;
+     
+
+    }
+    .home{
+        width: 92%;
+    }
+    .leftcontener{
+        width: 92%;
+    }
+    .rightcontener{
+        width: 100%;
+    }
+    .playbar{
+        width: 99%;
+    }
+.header2{
+    width: 100%;
+}
+.playlist{
+    width:100%
+    justifycontent
+}
+.hamburger  {
+    display: block;
+    display: flex;
+    align-items: center;
+}
+.hamburger img {
+    height: 25px;
+}
+.topconh{
+    display: flex;
+    justify-content: space-between;
+}
+.corsse{
+
+    cursor : pointer;
+}
+    
+}
